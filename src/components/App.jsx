@@ -22,7 +22,7 @@ class App extends React.Component {
   addContact = newContact => {
     const { contacts } = this.state;
     const contactExists = contacts.some(
-      contact => contact.name.toLowerCase() == newContact.name.toLowerCase()
+      contact => contact.name.toLowerCase() === newContact.name.toLowerCase()
     );
 
     if (!contactExists) {
